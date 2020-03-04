@@ -1,0 +1,46 @@
+{
+  "name": "uzimaru0000-cli",
+  "version": "1.0.0",
+  "description": "uzimaru0000's business card",
+  "main": "dist/cli.js",
+  "bin": {
+    "uzimaru0000": "./bin/main.js"
+  },
+  "scripts": {
+    "build": "parcel build -t node ./src/cli.tsx",
+    "watch": "parcel watch -t node ./src/cli.tsx",
+    "start": "node ./dist/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uzimaru0000",
+  "license": "ISC",
+  "dependencies": {
+    "ink": "^2.7.1",
+    "ink-big-text": "^1.0.1",
+    "ink-select-input": "^3.1.2",
+    "open": "^7.0.2",
+    "react": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@types/node": "^13.7.7",
+    "@types/open": "^6.2.1",
+    "@types/react": "^16.9.23",
+    "parcel": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  }
+}
